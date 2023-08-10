@@ -7,7 +7,8 @@
         <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=1iF9PyJ2Thzo&format=png" alt="pag"><a id="pagInicial" href="<?=$base;?>/home"><strong>Página Inicial</strong></a></li>
         <li class="li" id="search"><img class="img" src="https://img.icons8.com/?size=512&id=7695&format=png" alt="pesquisar"><a>Pesquisa</a></li>
         <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=PxI9IPCyBAOD&format=png" alt="reels"><a href="">Reels</a></li>
-        <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=PxI9IPCyBAOD&format=png" alt="reels"><a href="<?=$base;?>/search">search</a></li>
+        <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=PxI9IPCyBAOD&format=png" alt="reels"><a href="<?=$base;?>/search
+        ">search</a></li>
         <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=20202&format=png" alt="mensag"><a href="">Mensagens</a></li>
         <li class="li"><img class="img" src="https://img.icons8.com/?size=512&id=85033&format=png" alt="notif"><a href="">Notificações</a></li>
         <li class="li " onclick="criar()"><img class="img" src="https://img.icons8.com/?size=512&id=95852&format=png" alt="criar">Criar</li>
