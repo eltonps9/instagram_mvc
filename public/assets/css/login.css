@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: end;
+}
+
+.containerImages {
+    width: 350px;
+    height: 550px;
+    padding-right: 26px;
+    border-radius: 15px;
+    /*colocar essa imagem no css, ela esta no html:
+    background-image: url('/assets/images/iphone.jpg');*/
+    background-repeat: unset;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.imag {
+    width: 66%;
+    height: 85%;
+    border-radius: 21px;
+}
+
+.imag>img {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.containerdown {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.enterContainer {
+    width: 95%;
+    height: 82%;
+    display: flex;
+    margin-bottom: 3%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px solid rgb(184, 183, 183);
+}
+
+.cadastro {
+    width: 95%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px solid rgb(184, 183, 183);
+}
+
+.logo {
+    width: 100%;
+    height: 23%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario {
+    width: 100%;
+    height: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    border: .3px solid rgb(133, 133, 133);
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: 0.3px solid rgb(170, 170, 170) !important;
+}
+
+#submit {
+    background-color: rgb(75, 151, 250);
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    color: rgb(253, 253, 253);
+}
+
+.containerInt {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerInt>.separar {
+    width: 80%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerInt>strong {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha {
+    width: 38%;
+    border-bottom: 0.2px solid rgb(133, 133, 133);
+}

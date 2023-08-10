@@ -1,0 +1,104 @@
+#container_section {
+    flex-direction: column;
+}
+
+#container_infor {
+    width: 100%;
+    height: 32%;
+    display: flex;
+}
+
+#container_infor .foto {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container_infor .foto img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgb(90, 80, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*area de destaques*/
+
+#destaques {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.destaques {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.destaques>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/*area das escolhas */
+
+.escolher {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.escolher>.container_int {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*area das publicacoes*/
+
+#container_postagens {
+    width: 100%;
+    height: auto;
+    min-height: 48%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container_postagens>.postou {
+    width: 33.3%;
+    height: auto;
+}
+
+.postou>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*tirar esse img*/
+
+img {
+    width: 50px;
+    height: auto;
+}
