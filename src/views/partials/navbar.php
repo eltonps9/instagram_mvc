@@ -59,12 +59,12 @@
 
 
 <div id="screenSearch" style="display:none; z-index:5; ">
-    <div class="upscreen">
+    <form action="<?=$base;?>/search_Action" method="post" class="upscreen">
         <input type="search" name="search" placeholder="Encontre amigos">
         <div class="searchImg">
             <img src="<?=$base;?>/assets/images/search.png" alt="">
             <input type="submit" value="pesquisar">
         </div>
-    </div>
+    </form>
 </div>
 

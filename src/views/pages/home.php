@@ -23,7 +23,7 @@
                 <section id="section_story">
                     <!--foreach dos story seguidos-->
                     <?php $render('header');?>
-
+                   
                 </section>
                 <section id="section_post">
                     <?php if(!empty($_SESSION['post'])): foreach($_SESSION['post'] as $logado):?>

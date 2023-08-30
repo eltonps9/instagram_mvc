@@ -48,6 +48,7 @@ class PostController extends Controller {
         ->where([
             'id_user'=>$usuario['0']['id']
         ])
+        ->orderBy('id','desc')
         ->execute();
 
         $_SESSION['post']=$post;

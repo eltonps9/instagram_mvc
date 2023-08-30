@@ -63,7 +63,6 @@
                 <?php if($_SESSION['post']): foreach($_SESSION['post'] as $postada): ?>
                     <div class="postou">
                         <img src="<?=$base;?>/assets/images/<?=$postada['post'];?>" alt="">
-                        <details><img src="" alt="curtidas"><img src="" alt="comentarios"></details>
                     </div>
                 
                 <?php endforeach; else: ?>

@@ -11,6 +11,7 @@ class HomeController extends Controller {
     public function index() {
         $this->redirect('/login');
     }
+
     public function home(){
 
         $usuario=Usuario::select()
@@ -51,6 +52,5 @@ class HomeController extends Controller {
             'post'=>$post
         ]);
     }
-
 
 }

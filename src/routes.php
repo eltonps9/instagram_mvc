@@ -12,6 +12,6 @@ $router->get('/logout', 'LoginController@logout');
 $router->get('/home', 'HomeController@home');
 $router->post('/postagem/{id}', 'PostController@feedAction');
 $router->get('/perfil', 'HomeController@perfil');
-$router->get('/search', 'SearchController@search');
+$router->post('/search_Action', 'SearchingController@search');
 
 

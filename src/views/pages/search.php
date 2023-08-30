@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?=$base;?>/assets/css/header.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/css/navbar.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/css/global.css">
+    <link rel="stylesheet" href="<?=$base;?>/assets/css/search.css">
 
 </head>
 
@@ -19,25 +20,31 @@
         <!--menu navbar-->
         <?php $render('navbar');?>
     
-         
-        <div class="downscreen">
-            <?php if(!empty($search)): ?>
+        <section id="section_post">
+            <!-- aviso de pesquisa -->
+            <strong >
+                <?php 
+                    if(!empty($_SESSION['avisosearch'])){
+                        echo $_SESSION['avisosearch'];
+                        $_SESSION['avisosearch']="";
+                    }
+                ?>
+            </strong>
+            <?php foreach($searching as $search):?>
                 <div class="userSearch">
-                    <div class="img">
+                    <div class="imgSearch">
                         <img src="<?=$base;?>/assets/images/<?=$search['foto'];?>" alt="">
                     </div>
-                    <div class="nome">
-                        <h4><?=$search['nome'];?></h4>
+                    <div class="nomeSearch">
+                        <h4><?=$search['nomeUsuario'];?></h4>
                     </div>
                     <div class="seguir">
                         +
                     </div>
 
                 </div>
-            <?php else: ?>
-                <strong>Nada encontrado</strong>
-            <?php endif;?>
-        </div>     
+            <?php endforeach;?>
+        </section>     
 </div>
 
     </div>

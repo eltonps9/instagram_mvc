@@ -46,6 +46,7 @@ class LoginController extends Controller {
                 ->where([
                     'id_user'=>$usuario['0']['id']
                 ])
+                ->orderBy('id','desc')
                 ->execute();
 
                 $_SESSION['token']=$token;
@@ -75,6 +76,7 @@ class LoginController extends Controller {
         $nome=$_POST['nome'];
         $data=date('d/m/y');
         $token = md5(100,time());
+        $foto="avatar.png";
        
         
 
@@ -98,7 +100,8 @@ class LoginController extends Controller {
                     'senha'=>$senha,
                     'usuario'=>$usuarios,
                     'data'=>$data,
-                    'token'=>$token
+                    'token'=>$token,
+                    'foto'=>$foto
                 ])
                 ->execute();
                 
@@ -111,7 +114,7 @@ class LoginController extends Controller {
                 if(Count($usuario)>0){
 
                     $_SESSION['token']=$token;
-                    $_SESSION['usuario']=$usuario['0']['id'];
+                    $_SESSION['usuario']=$usuario['0'];
                     $this->render('/home',[
                         'usuario'=>$usuario
                     ]);

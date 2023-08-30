@@ -14,7 +14,14 @@
         <!--slides-->
         <div class="slide">
             <div class="containerImages" style="background-image: url('<?=$base;?>/assets/images/iphone.jpg');">
-                <img src="<?=$base;?>/assets/images/screenshot1.png" alt="" class="imag">
+                <div class="contImages" >
+                    <img src="<?=$base;?>/assets/images/screenshot1.png" alt="" class="imag">
+                    <!--
+                    <img src="<?=$base;?>/assets/images/screenshot2.png" alt="" class="imag">
+                    <img src="<?=$base;?>/assets/images/screenshot3.png" alt="" class="imag">
+                    <img src="<?=$base;?>/assets/images/screenshot4.png" alt="" class="imag">
+                    -->
+                </div>
             </div>
         </div>
 
@@ -63,6 +70,7 @@
         </section>
 
     </div>
+    <script src="<?=$base;?>/assets/js/sliderScript.js"></script>
 </body>
 
 </html>
