@@ -37,7 +37,7 @@
     height: 30px;
     border-radius: 50%;
     border: .6px solid #838282;
-    background-color: rgb(243, 61, 61);
+    background-color: red;
     font-size: 20px;
     display: flex;
     justify-content: center;

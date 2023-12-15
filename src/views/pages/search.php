@@ -38,9 +38,11 @@
                     <div class="nomeSearch">
                         <h4><?=$search['nomeUsuario'];?></h4>
                     </div>
-                    <div class="seguir">
-                        +
-                    </div>
+                    <form action="<?=$base;?>/seguir" method="post">
+                        <input type="hidden" name="search" value="<?=$searching;?>">
+                        <input style="display:none" type="text" name="id" value="<?=$search['id'];?>">
+                        <input type="submit" value="+">
+                    </form>
 
                 </div>
             <?php endforeach;?>

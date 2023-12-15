@@ -20,20 +20,43 @@ class PostController extends Controller {
         ->execute();
 
         $legenda = $_POST['legenda'];
-        $data=date('d/m/y');
+        $data=date('Y-m-d');
+        $horas=date('H:i:s');
         $arquivo = $_FILES['arquivo'];
-        $img=md5(time())."_".$arquivo['name'];
 
 
+        // ver qual tipo de arquivo é
+
+        switch ( $arquivo['type']) {
+
+            case  "image/png" :
+        
+                $img=md5(time())."_".$arquivo['name'];
+        
+                break;
+        
+        
+            case "video/mp4" :
+        
+                echo "agora vou querer saber se vai ser um rells";
+        
+                break;
+            default:
+            echo "nenhuma das alternativas";
+            exit;
+        
+        }
+        exit;
 
         //var_dump(is_dir('../public/assets/images'));
         
 
-        if(!empty($arquivo)){
+        if(!empty($arquivo) ){
             
             $postagem=Post::insert([
                 'post'=>$img,
                 'date'=>$data,
+                'hours'=>$horas,
                 'legenda'=>$legenda,
                 'id_user'=>$usuario['0']['id'],  
                 'name_usuario'=>$usuario['0']['nomeUsuario']

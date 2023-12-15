@@ -30,18 +30,7 @@ clicar.onchange = () => {
 
 }
 
-// area de pesquisa
-var search = document.querySelector("#search");
-var screenSearch = document.querySelector("#screenSearch");
-
-search.addEventListener('click', () => {
-    if (screenSearch.style.display == 'flex') {
-        screenSearch.style.display = "none";
-    } else {
-        screenSearch.style.display = "flex";
-    }
-
-});
+// area de postagem
 
 function voltar() {
 
@@ -70,3 +59,31 @@ function criar() {
 function aperta() {
     document.querySelector("#legenda").innerHTML = "";
 }
+
+
+// area de pesquisa
+var search = document.querySelector("#search");
+var screenSearch = document.querySelector("#screenSearch");
+
+search.addEventListener('click', () => {
+    if (screenSearch.style.display == 'flex') {
+        screenSearch.style.display = "none";
+    } else {
+        screenSearch.style.display = "flex";
+    }
+
+});
+
+/*
+var Seguir = document.querySelector(".seguir");
+
+Seguir.addEventListener('click', () => {
+    if (Seguir.style.backgroundColor == "red") {
+        Seguir.innerHTML = "✓";
+        Seguir.style.backgroundColor = "green";
+    } else {
+        Seguir.innerHTML = "+";
+        Seguir.style.backgroundColor = "red";
+    }
+});
+*/

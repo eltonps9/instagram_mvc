@@ -5,6 +5,9 @@ use \core\Controller;
 
 use\src\models\Usuario;
 use\src\models\Post;
+use\src\models\Like;
+use\src\models\Seguidore;
+
 
 class LoginController extends Controller {
 
@@ -31,7 +34,6 @@ class LoginController extends Controller {
             ])
             ->execute();
 
-            
             if(Count($usuario)>0){
                 $usuarioUpdate=Usuario::update([
                     'token'=>$token
@@ -49,6 +51,17 @@ class LoginController extends Controller {
                 ->orderBy('id','desc')
                 ->execute();
 
+                /*
+                $like=Like::select()
+                ->where([
+                    'id_post'=>$post['id']
+                ])
+                ->execute();
+
+                for($i=0;$i<=count($like);$i++)
+                $likes=$i;
+                */
+
                 $_SESSION['token']=$token;
                 $_SESSION['usuario']=$usuario['0'];
                 $_SESSION['post']=$post;
@@ -56,6 +69,7 @@ class LoginController extends Controller {
                 $this->render('/home',[
                     'usuario'=>$usuario,
                     'post'=>$post
+                    /*'like'=>$likes*/
                 ]);
                 exit;
             }

@@ -5,6 +5,7 @@ use \core\Controller;
 
 use\src\models\Usuario;
 use\src\models\Post;
+use\src\models\Seguidore;
 
 class HomeController extends Controller {
 
@@ -46,7 +47,31 @@ class HomeController extends Controller {
             'id_user'=>$usuario['id']
         ])
         ->execute();
+        for($i=0;$i<=count($post);$i++)
+        $publicacoes=$i;
 
+        //seguindo
+        $seguir=Seguidore::select()
+        ->where([
+            'id_user_seguindo'=>$usuario['id']
+        ])
+        ->execute();
+        for($i=0;$i<=count($seguir);$i++)
+        $seguidores=$i;
+
+        //a seguidores
+        $seguindo=Seguidore::select()
+        ->where([
+            'id_user_seguidor'=>$usuario['id']
+        ])
+        ->execute();
+        for($i=0;$i<=count($seguindo);$i++)
+        $Oseguindo=$i;
+        
+        $_SESSION['publi']=$publicacoes;
+        $_SESSION['seguindo']=$seguidores;
+        $_SESSION['seguir']=$Oseguindo;
+        
         $this->render('perfil',[
             'usuario'=>$usuario,
             'post'=>$post

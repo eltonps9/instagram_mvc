@@ -64,6 +64,7 @@
     width: 400px;
     height: 600px;
     display: flex;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: start;
     flex-direction: column;
@@ -121,10 +122,34 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    margin-bottom: 8px;
 }
 
-.linkUsuario>a {
-    margin-right: 5px;
+.acoes {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.acoes>.btn>img {
+    width: 30x;
+    height: 30px;
+    margin-left: 7px;
+}
+
+.btn>img:hover {
+    opacity: 80%;
+}
+
+.linkUsuario>strong {
+    margin-right: 8px;
 }
 
 .comentario {

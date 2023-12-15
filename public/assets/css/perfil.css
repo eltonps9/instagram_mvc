@@ -1,10 +1,11 @@
 #container_section {
     flex-direction: column;
+    height: auto;
 }
 
 #container_infor {
     width: 100%;
-    height: 32%;
+    height: 40%;
     display: flex;
 }
 
@@ -26,8 +27,55 @@
     justify-content: center;
 }
 
+#container_infor .info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-/*area de destaques*/
+.infor_usuario {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.infor_usuario>.infor_up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inforUp>strong {
+    margin-right: 15px;
+}
+
+.inforUp>button {
+    margin-right: 15px;
+}
+
+.infor_up>p {
+    margin-right: 20px;
+}
+
+.detalhes_usuario {
+    width: 100%;
+    height: 50%;
+    font-size: 13px;
+}
+
+.detalhes_usuario>.bold {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/*area dos storys salvos*/
 
 #destaques {
     width: 100%;
@@ -55,6 +103,25 @@
 }
 
 
+/* visualizar imagem */
+
+.container_imagem {
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.imagemView {
+    width: 60%;
+    height: auto;
+}
+
+
 /*area das escolhas */
 
 .escolher {
@@ -78,7 +145,7 @@
 #container_postagens {
     width: 100%;
     height: auto;
-    min-height: 48%;
+    max-height: 42%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -86,13 +153,24 @@
 }
 
 #container_postagens>.postou {
-    width: 33.3%;
-    height: auto;
+    width: 32%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
 .postou>img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+    cursor: pointer;
 }
 
 

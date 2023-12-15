@@ -42,29 +42,28 @@
                                 </div>
                                 <!-- legenda e comentarios do post-->
                                 <div id="postComent">
+                                    <div class="acoes">
+                                        <button class="btn" id="likeButton">
+                                            <img src="https://img.icons8.com/?size=512&id=85033&format=png" alt="">
+                                        </button>
+                                        <button class="btn" id="comentariosButton">
+                                            <img src="https://img.icons8.com/?size=512&id=20202&format=png" alt="">
+                                        </button>
+                                    </div>
                                     <div class="linkUsuario">
-                                        <a href=""><?=$logado['name_usuario'];?></a>
+                                        <strong><?=$logado['name_usuario'];?></strong>
                                         <p><?=$logado['legenda'];?></p>
                                     </div>
                                     <div class="comentarioUsuarios">
                                         <a href="">ver outros comentarios ...</a>
                                     </div>
-                                        <div class="comentario">
-                                            <div class="p">
-                                                <a href="">kelly.lobo</a>
-                                                <p> lindo</p>
-                                            </div>
-                                            <div class="p">
-                                                <a href="">robertt.lobo</a>
-                                                <p> massa</p>
-                                            </div>
-                                            <input type="text" name="comentario" placeholder="Adicionar comentario..." id="comentario">
-                                        </div>
+                                    <div class="comentario">
+                                        <input type="text" name="comentario" placeholder="Adicionar comentario..." id="comentario">
+                                    </div>
                                 </div>
                             </div>
                             <?php endforeach; else: ?>
                                 <div id="postar">Criar postagem</div>
-                                
                             <?php  endif;?>
                 </section>
             </div>

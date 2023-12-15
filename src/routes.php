@@ -13,5 +13,7 @@ $router->get('/home', 'HomeController@home');
 $router->post('/postagem/{id}', 'PostController@feedAction');
 $router->get('/perfil', 'HomeController@perfil');
 $router->post('/search_Action', 'SearchingController@search');
+$router->get('/chat', 'HomeController@chat');
+$router->post('/seguir', 'AcoesController@seguir');
 
 
